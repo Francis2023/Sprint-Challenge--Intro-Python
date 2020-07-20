@@ -15,5 +15,21 @@
 #
 # class Whatever:
 #     pass
-#
+
 # Put a comment noting which class is the base class
+class Vehicle:
+    def __init__(self,name,groundVehicle=[],flightVehicle=()):
+        self.name = name
+        self.groundVehicle = groundVehicle
+        self.flightVehicle = flightVehicle
+
+class GroundVehicle:
+    def __init__(self,name):
+        self.name
+
+class Car(GroundVehicle):
+    def __init__(self, name, mileage):
+        super().__init__(name)
+        self.name
+
+        
