@@ -18,58 +18,30 @@
 
 # Put a comment noting which class is the base class
 # Vechile is the base class
+# Vehicle class, parent class
 class Vehicle:
-    def __init__(self,name,groundVehicle=[],flightVehicle=[]):
-        self.name = name
-        self.groundVehicle = groundVehicle
-        self.flightVehicle = flightVehicle
+    pass
 
-class GroundVehicle:
-    def __init__(self,type):
-        self.type
-    
-    def __str__(self):
-        return (f"{self.type}")
+# This is the child class inherits from Vehicle class
+class FlightVehicle(Vehicle):
+    pass
 
+# Another child class inherits from Vehicle class
+class GroundVehicle(Vehicle):
+    pass
+
+# Child class inherits from GroundVehicle class
 class Car(GroundVehicle):
-    def __init__(self, name, mileage, type):
-        super().__init__(name)
-        self.name
-        self.mileage
+    pass
 
-    def __str__(self):
-        return (f"{self.name}, {self.mileage}, {self.type}")
-
+# Child class inherits from GroundVehicle class
 class Motorcycle(GroundVehicle):
-    def __init__(self, name, mileage, type):
-        super().__init__(name)
-        self.name
-        self.mileage
+    pass
 
-    def __str__(self):
-        return (f"{self.name}, {self.mileage}, {self.type}")
-
-class FlightVehicle:
-    def __init__(self,type):
-        self.type
-    
-    def __str__(self):
-        return (f"{self.type}")
-
+# Child class inherits from FlightVehicle class
 class Airplane(FlightVehicle):
-    def __init__(self, name, type):
-        super().__init__(name)
-        self.name
-       
+    pass
 
-    def __str__(self):
-        return (f"{self.name}, {self.type}")
-
-class StarShip(FlightVehicle):
-    def __init__(self, name, type):
-        super().__init__(name)
-        self.name
-        
-
-    def __str__(self):
-        return (f"{self.name}, {self.type}")
+# Child class inherits from FlightVehicle class
+class Starship(FlightVehicle):
+    pass
